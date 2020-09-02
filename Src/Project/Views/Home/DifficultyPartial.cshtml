@@ -1,0 +1,19 @@
+﻿@model string
+
+@switch (Model)
+{
+    case "easy":
+        {
+            <div class="card-footer">
+                <small class="text-muted">Easy (10-20 Minutes)</small>
+            </div>
+        }
+        break;
+    default:
+        {
+            <div class="card-footer">
+                <small class="text-muted">Medium (20-40 Minutes)</small>
+            </div>
+        }
+        break;
+}
